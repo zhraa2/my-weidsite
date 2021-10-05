@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round");
+body,
+html,
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Varela Round", sans-serif;
+}
+h1 {
+  text-align: center;
+  padding: 16px;
+}
+.mnu {
+  position: relative;
+  float: left;
+  width: 230px;
+  left: -230px;
+  height: 100vh;
+  background-color: #0b4d60;
+  color: whitesmoke;
+  z-index: 999;
+}
+.mnu-open {
+  left: 0px;
+  background-color: midnightblue;
+}
+.clos-btn {
+  display: block;
+  height: 60px;
+  font-size: 25px;
+  padding: 0 10px;
+  background-color: #0b4d60;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  left: 230px;
+  line-height: 60px;
+  width: 20px;
+}
+.open-btn {
+  background-color: midnightblue;
+}
+#father > li {
+  list-style-type: none;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  border: 1px solid darkgray;
+}
+li:hover {
+  background-color: #64a3b4;
+  opacity: 0.9;
+  color: black;
+}
+#son {
+  display: none;
+  width: 100% !important;
+}
+#son > li {
+  background-color: #6cb1b6;
+  color: #333;
+}
+#son > li:hover {
+  background-color: #0b4d60;
+  color: azure;
+}
+.content {
+  position: relative;
+  background-color: #93bbca;
+  height: 60px;
+  box-sizing: border-box;
+}
+.content .img {
+  /* position: relative; */
+  height: 100vh;
+  background-image: url("hj.jpg");
+  background-size: cover;
+  position: relative;
+}
